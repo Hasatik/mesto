@@ -1,4 +1,5 @@
 .element {
+  max-width: 282px;
   padding-bottom: 31px;
   background-color: #ffffff;
   /* z-index: 1; */

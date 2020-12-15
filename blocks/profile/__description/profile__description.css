@@ -13,9 +13,19 @@
   overflow: hidden;
   grid-area: Description;
 }
+@media screen and (max-width:920px) {
+  .profile__description {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    /* margin-left: 0; */
+  }
+}
 
 @media screen and (max-width: 524px) {
   .profile__description {
+    max-width: 320px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;

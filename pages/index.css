@@ -20,10 +20,10 @@
 
 /* ELEMENTS */
 @import url(../blocks/Elements/elements.css);
-@import url(../blocks/Elements/element/element.css);
-@import url(../blocks/Elements/element/__img/element__img.css);
-@import url(../blocks/Elements/element/__name/element__name.css);
-@import url(../blocks/Elements/element/__like/element__like.css);
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__img/element__img.css);
+@import url(../blocks/element/__name/element__name.css);
+@import url(../blocks/element/__like/element__like.css);
 
 /* FOOTER */
 

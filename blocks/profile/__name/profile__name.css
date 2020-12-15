@@ -14,9 +14,19 @@
   max-width: 500px;
   box-sizing: border-box;
 }
-
+@media screen and (max-width: 920px) {
+  .profile__name {
+    max-width: 320px;
+    font-size: 27px;
+    text-align: left;
+    /* margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0; */
+  }
+}
 @media screen and (max-width: 524px) {
   .profile__name {
+    max-width: 320px;
     font-size: 27px;
     text-align: center;
     margin-bottom: 0;
