@@ -1,0 +1,32 @@
+.profile__information {
+  display: grid;
+  grid-template-columns: 120px minmax(min-content, 1fr) 1fr min-content;
+  grid-template-rows: min-content 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Avatar Name Edit Add"
+    "Avatar Description Description Add";
+}
+
+@media screen and (max-width: 820px) {
+  .profile__information {
+    grid-template-columns: 120px minmax(min-content, 1fr) 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-areas:
+      "Avatar Name Edit "
+      "Avatar Description Description"
+      "Add Add Add";
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .profile__information {
+    grid-template-columns: 1fr minmax(200px, min-content) 1fr;
+    grid-template-rows: 1fr min-content min-content min-content;
+    grid-template-areas:
+      "Avatar Avatar Avatar"
+      ". Name Edit"
+      "Description Description Description"
+      "Add Add Add";
+  }
+}

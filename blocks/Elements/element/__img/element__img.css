@@ -1,0 +1,5 @@
+.element__img{
+    width: 100%;
+    grid-area: Image;
+    margin-bottom: 25px;
+}

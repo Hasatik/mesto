@@ -1,0 +1,11 @@
+.element {
+  padding-bottom: 31px;
+  background-color: #ffffff;
+  /* z-index: 1; */
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas:
+    "Image Image"
+    "Name Like";
+  grid-template-columns: 1fr min-content;
+}
