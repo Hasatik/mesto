@@ -8,9 +8,9 @@
     grid-area: Like;
     justify-self: center;
 }
-.element__like:hover{
+.element__like:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: .5;
 }
 
   
