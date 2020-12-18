@@ -23,15 +23,14 @@ function popupDisplay() {
   }
 };
 
-function formSubmitHandler(evt) {
-  evt.preventDefault();
+function handleFormSubmit(event) {
+  event.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = jobInput.value;
-  popupDisplay('click', saveButton);
-
+  saveButton.onclick = popupDisplay();
 };
 
 editButton.addEventListener('click', popupDisplay);
 closeButton.addEventListener('click', popupDisplay);
-formElement.addEventListener('submit', formSubmitHandler);
+formElement.addEventListener('submit', handleFormSubmit);
 
