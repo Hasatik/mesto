@@ -27,7 +27,8 @@ function handleFormSubmit(event) {
   event.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = jobInput.value;
-  saveButton.onclick = popupDisplay();
+  // saveButton.onclick = popupDisplay();
+  popupDisplay();
 };
 
 editButton.addEventListener('click', popupDisplay);
