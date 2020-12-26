@@ -8,5 +8,5 @@
   grid-template-areas:
     "Image Image"
     "Name Like";
-  grid-template-columns: 1fr min-content;
+  /* grid-template-columns: 1fr min-content; */
 }
