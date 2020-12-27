@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./pages/index.css" />
-        <title>Mesto Russia</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Mesto Russia</title>
+  </head>
 
-    <body class="page">
-        <header class="header">
-            <img class="header__logo" src="./images/header-logo.svg" alt="Россия" />
-        </header>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Россия" />
+    </header>
 
-        <main>
-            <section class="profile">
-                <div class="profile__information">
-                    <img class="profile__avatar" src="./images/profile__avatar.png" alt="Аватар" />
-                    <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <p class="profile__description">Исследователь океана</p>
-                    <button type="button" class="profile__edit-button"></button>
-                    <button type="button" class="profile__add-button"></button>
-                </div>
-            </section>
-
-            <section class="cards">
-                <!-- <div class="card">
-                    <img src="./images/Elbrus.png" alt="Эльбрус" class="card__img" />
-                    <h2 class="card__name">Гора Эльбрус</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-                <div class="card">
-                    <img src="./images/Donbay.png" alt="Донбай" class="card__img" />
-                    <h2 class="card__name">Домбай</h2>
-                    <button type="button" class="card__like"></button>
-                </div>
-                <div class="card">
-                    <img src="./images/Donbay.png" alt="Донбай" class="card__img" />
-                    <h2 class="card__name">Домбай</h2>
-                    <button type="button" class="card__like"></button>
-                </div> -->
-                <!-- <div class="element">
-                    <img src="./images/Elbrus.png" alt="Эльбрус" class="element__img" />
-                    <h2 class="element__name">Гора Эльбрус</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-                <div class="element">
-                    <img src="./images/Karachevsk.png" alt="Карачаевск" class="element__img" />
-                    <h2 class="element__name">Карачаевск</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-                <div class="element">
-                    <img src="./images/Donbay.png" alt="Донбай" class="element__img" />
-                    <h2 class="element__name">Домбай</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-                <div class="element">
-                    <img src="./images/Donbay.png" alt="Донбай" class="element__img" />
-                    <h2 class="element__name">Домбай</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-                <div class="element">
-                    <img src="./images/Elbrus.png" alt="Эльбрус" class="element__img" />
-                    <h2 class="element__name">Гора Эльбрус</h2>
-                    <button type="button" class="element__like"></button>
-                </div>
-                <div class="element">
-                    <img src="./images/Karachevsk.png" alt="Карачаевск" class="element__img" />
-                    <h2 class="element__name">Карачаево-Черкеск</h2>
-                    <button type="button" class="element__like"></button>
-                </div> -->
-
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
-        </footer>
-        
-
-        <section class="popup popup_profile" id="profile-edit">
-            <form name="profile-edit" class="popup__container">
-                <h3 class="popup__title">Редактировать профиль</h3>
-                <div class="popup__inputs">
-                    <input type="text"  name="name-card" id="input-name" class="popup__input popup__input_type_name" value="" />
-                    <input type="text"  name="src-card" id="input-desc" class="popup__input popup__input_type_description" value="" />
-                </div>
-                <button type="submit" class="popup__save-button">Сохранить</button>
-                <button type="button" aria-label="Закрыть окно" class="popup__close-button popup__close-button_profile"></button>
-            </form>
-        </section>
-
-
-        <section class="popup popup_card" id="add-card">
-            <form name="card-edit" class="popup__container">
-                <h3 class="popup__title">Новое место</h3>
-                <div class="popup__inputs">
-                    <input type="text" placeholder="Название"  id="input-name-card" class="popup__input popup__input_type_card-name" value="" />
-                    <input type="url" placeholder="Ссылка на картинку"  id="input-url" class="popup__input popup__input_type_url" value="" />
-                </div>
-                <button type="submit" class="popup__save-button popup__save-button_card">Сохранить</button>
-                <button type="button" aria-label="Закрыть окно" class="popup__close-button popup__close-button_card"></button>
-            </form>
-        </section>
-
-        <div class="popup popup_img">
-            <div class="popup__box">
-                <button type="button" aria-label="закрыть" class="popup__close-button popup__close-button_img"></button>
-                <img class="popup__image" alt=" " src=" ">
-                <h2 class="popup__image-name"></h2>
-            </div>    
+    <main>
+      <section class="profile">
+        <div class="profile__information">
+          <img
+            class="profile__avatar"
+            src="./images/profile__avatar.png"
+            alt="Аватар"
+          />
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <p class="profile__description">Исследователь океана</p>
+          <button type="button" class="profile__edit-button"></button>
+          <button type="button" class="profile__add-button"></button>
         </div>
-<!-- TEMPLATE -->
-        <template id="template" class="card-template">
-            <div class="card">
-                <button type="button" aria-label="удалить" class="card__delete"></button> 
-                <img src=" " alt=" " class="card__img" />
-                <h2 class="card__name"></h2>
-                <button type="button" class="card__like"></button>
-            </div>
-        </template>
+      </section>
 
-        <script src="./scripts/popup.js"></script>
-    </body>
+      <section class="cards"></section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+
+    <div class="popup popup_profile" id="profile-edit">
+      <form name="profile-edit-inf" class="popup__container popup__container_type_profile">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <div class="popup__inputs">
+          <input
+            type="text"
+            name="name-card"
+            id="input-name"
+            class="popup__input popup__input_type_name"
+            value=""
+          />
+          <input
+            type="text"
+            name="src-card"
+            id="input-desc"
+            class="popup__input popup__input_type_description"
+            value=""
+          />
+        </div>
+        <button type="submit" class="popup__save-button">Сохранить</button>
+        <button
+          type="button"
+          aria-label="Закрыть окно"
+          class="popup__close-button popup__close-button_profile"
+        ></button>
+      </form>
+    </div>
+
+    <div class="popup popup_card" id="add-card">
+      <form name="card-edit" class="popup__container popup__container_type_card">
+        <h3 class="popup__title">Новое место</h3>
+        <div class="popup__inputs">
+          <input
+            type="text"
+            placeholder="Название"
+            id="input-name-card"
+            class="popup__input popup__input_type_card-name"
+            value=""
+          />
+          <input
+            type="url"
+            placeholder="Ссылка на картинку"
+            id="input-url"
+            class="popup__input popup__input_type_url"
+            value=""
+          />
+        </div>
+        <button
+          type="submit"
+          class="popup__save-button popup__save-button_card"
+        >
+          Сохранить
+        </button>
+        <button
+          type="button"
+          aria-label="Закрыть окно"
+          class="popup__close-button popup__close-button_card"
+        ></button>
+      </form>
+    </div>
+
+    <div class="popup popup_img">
+      <div class="popup__box">
+        <button
+          type="button"
+          aria-label="закрыть"
+          class="popup__close-button popup__close-button_img"
+        ></button>
+        <img class="popup__image" alt=" " src=" " />
+        <h2 class="popup__image-name"></h2>
+      </div>
+    </div>
+    <!-- TEMPLATE -->
+    <template id="template" class="card-template">
+      <div class="card">
+        <button
+          type="button"
+          aria-label="удалить"
+          class="card__delete"
+        ></button>
+        <img src=" " alt=" " class="card__img" />
+        <h2 class="card__name"></h2>
+        <button type="button" class="card__like"></button>
+      </div>
+    </template>
+
+    <script src="./scripts/initial-cards.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
