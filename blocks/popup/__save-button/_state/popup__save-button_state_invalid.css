@@ -1,0 +1,10 @@
+.popup__save-button_state_invalid {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    opacity: .2;
+}
+
+.popup__save-button_state_invalid:hover {
+    opacity: .2;
+}

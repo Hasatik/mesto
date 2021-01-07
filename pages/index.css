@@ -42,10 +42,14 @@
 @import url(../blocks/popup/__input/_type/popup__input_type_description.css);
 @import url(../blocks/popup/__input/_type/popup__input_type_place-name.css);
 @import url(../blocks/popup/__input/_type/popup__input_type_image-link.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_invalid.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);
+@import url(../blocks/popup/__save-button/_state/popup__save-button_state_invalid.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__img/popup__img.css);
 @import url(../blocks/popup/__image/popup__image.css);
 @import url(../blocks/popup/__image-name/popup__image-name.css);
 @import url(../blocks/popup/__box/popup__box.css);
+@import url(../blocks/popup/__error/popup__error.css);
+@import url(../blocks/popup/__inputs/popup__inputs.css);
 

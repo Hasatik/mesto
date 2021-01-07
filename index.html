@@ -40,18 +40,28 @@
         <div class="popup__inputs">
           <input
             type="text"
-            name="name-card"
+            name="name-profile"
             id="input-name"
+            placeholder="Имя"
             class="popup__input popup__input_type_name"
+            minlength="2"
+            maxlength="40"
             value=""
+            required novalidate
           />
+          <span id="input-name-error" class="popup__error"></span>
           <input
             type="text"
-            name="src-card"
+            name="name-job"
             id="input-desc"
+            placeholder="Ваша профессия"
             class="popup__input popup__input_type_description"
+            minlength="3"
+            maxlength="40"
             value=""
+            required novalidate
           />
+          <span id="input-desc-error" class="popup__error"></span>
         </div>
         <button type="submit" class="popup__save-button">Сохранить</button>
         <button
@@ -69,17 +79,23 @@
           <input
             type="text"
             placeholder="Название"
-            id="input-name-card"
+            id="name-card"
             class="popup__input popup__input_type_card-name"
+            minlength="2"
+            maxlength="30"
             value=""
+            required novalidate
           />
+          <span id="name-card-error" class="popup__error"></span>
           <input
             type="url"
             placeholder="Ссылка на картинку"
             id="input-url"
             class="popup__input popup__input_type_url"
             value=""
+            required novalidate
           />
+          <span id="input-url-error" class="popup__error"></span>
         </div>
         <button
           type="submit"
@@ -119,7 +135,7 @@
         <button type="button" class="card__like"></button>
       </div>
     </template>
-
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/initial-cards.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
