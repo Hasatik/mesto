@@ -1,5 +1,4 @@
 
-const popup = document.querySelector('.popup');
 const popupEdit = document.querySelector(".popup_profile");
 const editButton = document.querySelector(".profile__edit-button");
 const formProfile = popupEdit.querySelector(".popup__container_type_profile");
@@ -27,24 +26,17 @@ const profileDescription = document.querySelector(".profile__description");
 const addCard = document.querySelector("#add-card");
 const profileEdit = document.querySelector("#profile-edit");
 
-// function fillPopup() {
-//   nameInput.value = profileName.textContent;
-//   jobInput.value = profileDescription.textContent;
+// function handleProfileFormSubmit(event) {
+//   event.preventDefault();
+//   profileName.textContent = nameInput.value;
+//   profileDescription.textContent = jobInput.value;
+//   closePopup(profileEdit);
 // }
-
-function handleProfileFormSubmit(event) {
-  event.preventDefault();
-  profileName.textContent = nameInput.value;
-  profileDescription.textContent = jobInput.value;
-  closePopup(profileEdit);
-}
 function openPopup(popup) {
   popup.classList.add("popup_opened");
   popup.addEventListener('click', closePopupByOverlay);
-    document.addEventListener('keydown',closePopupByEsc);
-    if (popup !== imgPopup){
-        clearForm(popup, validationConfig);
-  }
+  document.addEventListener('keydown',closePopupByEsc);
+  clearForm(popup, validationConfig);
 }
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
@@ -91,21 +83,7 @@ function resetForm(popup, config) {
   popup.querySelector(config.formSelector).reset();
 }
 
-function deleteErrors(popup, config) {
-  popup.querySelectorAll(config.inputSelector).forEach(item => {
-      item.classList.remove(config.inputInvalidClass)
-  })
-  popup.querySelectorAll(config.spanSelector).forEach(item => {
-      item.textContent = ``
-  })
-}
 
-function clearForm(popup, config) {
-  deleteErrors(popup, config);
-  if (popup === popupCard){
-      resetForm(popup, config)
-  }
-}
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();

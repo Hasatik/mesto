@@ -21,6 +21,19 @@ function hideError(form, input, config) {
     input.classList.remove(config.inputInvalidClass);
 }
 
+function deleteErrors(popup, config) {
+    popup.querySelectorAll(config.inputSelector).forEach(item => {
+        item.classList.remove(config.inputInvalidClass)
+    })
+    popup.querySelectorAll(config.spanSelector).forEach(item => {
+        item.textContent = ``
+    })
+  }
+  
+  function clearForm(popup, config) {
+    deleteErrors(popup, config);
+    resetForm(addCard, config)
+  }
 function checkInputValidity(form, input, config) {
     if(input.validity.valid) {
         hideError(form, input, config)
